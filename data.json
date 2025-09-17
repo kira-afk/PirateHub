@@ -1,0 +1,32 @@
+[
+  {
+    "id": "maths-sequence-and-series-sequence-&-series-02",
+    "subject": "Maths",
+    "chapter": "Sequence and Series",
+    "lecture": "Sequence & Series 02",
+    "path": "lectures/Maths/Sequence and Series/Sequence & Series 02.mp4",
+    "duration": 7756,
+    "thumbnail": "assets/default.png",
+    "relatedFiles": []
+  },
+  {
+    "id": "maths-sequence-and-series-sequence-and-series-01",
+    "subject": "Maths",
+    "chapter": "Sequence and Series",
+    "lecture": "Sequence and Series 01",
+    "path": "lectures/Maths/Sequence and Series/Sequence and Series 01.mp4",
+    "duration": 7440,
+    "thumbnail": "assets/default.png",
+    "relatedFiles": []
+  },
+  {
+    "id": "maths-sequence-and-series-sequence-and-series-04",
+    "subject": "Maths",
+    "chapter": "Sequence and Series",
+    "lecture": "Sequence and Series 04",
+    "path": "lectures/Maths/Sequence and Series/Sequence and Series 04.mp4",
+    "duration": 8960,
+    "thumbnail": "assets/default.png",
+    "relatedFiles": []
+  }
+]
