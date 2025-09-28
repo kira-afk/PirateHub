@@ -1,54 +1,187 @@
 {
   "lectures": [
     {
-      "id": "lec-1klOKYv9Q8SEaMEhJtknGvUXeTJ2YLbWP-1",
-      "subject": "Physics",
-      "chapter": "Lectures",
-      "lecture": "Physics",
-      "path": "https://drive.google.com/uc?id=1c7j4BpKiGdwxlem-40u6t7vuSceaVDY9&export=download",
+      "id": "Lectures-Physics-Physics_Work,_Energy_&_Power_08_Types_Of_Equilibrium_And.mp4",
+      "subject": "Lectures",
+      "chapter": "Physics",
+      "lecture": "Physics_Work,_Energy_&_Power_08_Types_Of_Equilibrium_And",
+      "path": "https://drive.google.com/uc?id=1YuGT-e0RjQ43EiJIwkTZwGB_aHD-hTQq&export=download",
+      "duration": "00:00",
+      "thumbnail": "assets/default.png",
+      "relatedFiles": [
+        {
+          "name": "Physics_Work,_Energy_&_Power_DPP_04_Of_Lec_06_Prayas.pdf",
+          "path": "https://drive.google.com/uc?id=1M3t7Vyn2WJqDGGz0RWqdbaH7Msts7n_b&export=download"
+        },
+        {
+          "name": "Work,_Energy_&_Power_DPP_01_Of_Lec_02_Prayas_JEE_2_0_2025 (2).pdf",
+          "path": "https://drive.google.com/uc?id=10FQcLDCrWZ7Nn1kIJRIjx52ygzx70bph&export=download"
+        },
+        {
+          "name": "Work,_Energy_&_Power_DPP_02_Of_Lec_04_Prayas_JEE_2_0_2025 (2).pdf",
+          "path": "https://drive.google.com/uc?id=1oKFLIqq48oukyMBuaOkJ-Zsqh0G0fIID&export=download"
+        },
+        {
+          "name": "Physics_Work,_Energy_&_Power_DPP_03_Of_Lec_05_Prayas.pdf",
+          "path": "https://drive.google.com/uc?id=1SVyWLi1Lh8lPW6mslEEL2KcJATLuEBiJ&export=download"
+        }
+      ]
+    },
+    {
+      "id": "Lectures-Physics-Physics_Work,_Energy_&_Power_07_Questions_On_WET_Extra.mp4",
+      "subject": "Lectures",
+      "chapter": "Physics",
+      "lecture": "Physics_Work,_Energy_&_Power_07_Questions_On_WET_Extra",
+      "path": "https://drive.google.com/uc?id=1UA8uYgPW0r4Np5JPMAzxtGj6xD_oBh38&export=download",
+      "duration": "00:00",
+      "thumbnail": "assets/default.png",
+      "relatedFiles": [
+        {
+          "name": "Physics_Work,_Energy_&_Power_DPP_04_Of_Lec_06_Prayas.pdf",
+          "path": "https://drive.google.com/uc?id=1M3t7Vyn2WJqDGGz0RWqdbaH7Msts7n_b&export=download"
+        },
+        {
+          "name": "Work,_Energy_&_Power_DPP_01_Of_Lec_02_Prayas_JEE_2_0_2025 (2).pdf",
+          "path": "https://drive.google.com/uc?id=10FQcLDCrWZ7Nn1kIJRIjx52ygzx70bph&export=download"
+        },
+        {
+          "name": "Work,_Energy_&_Power_DPP_02_Of_Lec_04_Prayas_JEE_2_0_2025 (2).pdf",
+          "path": "https://drive.google.com/uc?id=1oKFLIqq48oukyMBuaOkJ-Zsqh0G0fIID&export=download"
+        },
+        {
+          "name": "Physics_Work,_Energy_&_Power_DPP_03_Of_Lec_05_Prayas.pdf",
+          "path": "https://drive.google.com/uc?id=1SVyWLi1Lh8lPW6mslEEL2KcJATLuEBiJ&export=download"
+        }
+      ]
+    },
+    {
+      "id": "Lectures-Physical_Chemistry-Structure_of_Atom_04.mp4",
+      "subject": "Lectures",
+      "chapter": "Physical Chemistry",
+      "lecture": "Structure of Atom 04",
+      "path": "https://drive.google.com/uc?id=1Yj5GDSlYThLG6QkVYjEIS51TucnNB5MH&export=download",
       "duration": "00:00",
       "thumbnail": "assets/default.png",
       "relatedFiles": []
     },
     {
-      "id": "lec-1klOKYv9Q8SEaMEhJtknGvUXeTJ2YLbWP-2",
-      "subject": "Physics",
-      "chapter": "Lectures",
-      "lecture": "Inorganic Chemistry",
-      "path": "https://drive.google.com/uc?id=1Wl-h5sc1LSh3bX7tQeD1He_3U_9XmREW&export=download",
+      "id": "Lectures-Physical_Chemistry-Structure_of_Atom_03.mp4",
+      "subject": "Lectures",
+      "chapter": "Physical Chemistry",
+      "lecture": "Structure of Atom 03",
+      "path": "https://drive.google.com/uc?id=1zkgVl28viOOVMSmU_GrNfGmn0zNHjgPl&export=download",
       "duration": "00:00",
       "thumbnail": "assets/default.png",
       "relatedFiles": []
     },
     {
-      "id": "lec-1klOKYv9Q8SEaMEhJtknGvUXeTJ2YLbWP-3",
-      "subject": "Physics",
-      "chapter": "Lectures",
-      "lecture": "Physical Chemistry",
-      "path": "https://drive.google.com/uc?id=17ajpgIxZkRz5Y7qFzmVsk8hkREekjBfd&export=download",
+      "id": "Lectures-Physical_Chemistry-Structure_of_Atom_02.mp4",
+      "subject": "Lectures",
+      "chapter": "Physical Chemistry",
+      "lecture": "Structure of Atom 02",
+      "path": "https://drive.google.com/uc?id=1XDkhemVJiRo0mvdvdhfkHdqiqxc7EEog&export=download",
       "duration": "00:00",
       "thumbnail": "assets/default.png",
       "relatedFiles": []
     },
     {
-      "id": "lec-1klOKYv9Q8SEaMEhJtknGvUXeTJ2YLbWP-4",
-      "subject": "Physics",
-      "chapter": "Lectures",
-      "lecture": "Maths",
-      "path": "https://drive.google.com/uc?id=1O-SMieUwGT2evuUjUgvCXzZBdHahq9eN&export=download",
+      "id": "Lectures-Physical_Chemistry-video_2025-09-16_11-23-35.mp4",
+      "subject": "Lectures",
+      "chapter": "Physical Chemistry",
+      "lecture": "video_2025-09-16_11-23-35",
+      "path": "https://drive.google.com/uc?id=1-wekPLZHOD5HSyOc3RGNYH-3bbWSrmc1&export=download",
       "duration": "00:00",
       "thumbnail": "assets/default.png",
       "relatedFiles": []
     },
     {
-      "id": "lec-1klOKYv9Q8SEaMEhJtknGvUXeTJ2YLbWP-5",
-      "subject": "Physics",
-      "chapter": "Lectures",
-      "lecture": "Organic Chemistry",
-      "path": "https://drive.google.com/uc?id=1-9pizWQgpKYlG0qa7ooOh5YF-900FWB1&export=download",
+      "id": "Lectures-Maths-Sequence_&_Series_08.mp4",
+      "subject": "Lectures",
+      "chapter": "Maths",
+      "lecture": "Sequence & Series 08",
+      "path": "https://drive.google.com/uc?id=1qhwz18abaCSvqsMTu4X5itncOGinwDKV&export=download",
       "duration": "00:00",
       "thumbnail": "assets/default.png",
-      "relatedFiles": []
+      "relatedFiles": [
+        {
+          "name": "46cefc94-a004-4e89-af7c-50d044235dbe.pdf",
+          "path": "https://drive.google.com/uc?id=1DWRL6LoAaXbjjefH1b0MkmBpxBVgga-A&export=download"
+        },
+        {
+          "name": "295161b7-c9a2-42c9-9bf0-530f457b0040.pdf",
+          "path": "https://drive.google.com/uc?id=1yROQ4APNjWeopPPZeeyju6oMP8hhMTpD&export=download"
+        },
+        {
+          "name": "6a8bff59-ee10-4024-9aef-42d87cd2422f.pdf",
+          "path": "https://drive.google.com/uc?id=1Xh8sm3SRYeJCocR1okVROGz-yCTFGqmw&export=download"
+        },
+        {
+          "name": "d745da3b-fd22-4a20-b3f0-21935b487756.pdf",
+          "path": "https://drive.google.com/uc?id=1EuC3cXaCRkzBTy4oJxMcsnReCMHzCgSq&export=download"
+        },
+        {
+          "name": "676f2561-e127-4d25-9acc-4cc50e78e854.pdf",
+          "path": "https://drive.google.com/uc?id=1jhqJRr_Mo04uhTrvi0SzTNMOfHoj71Cp&export=download"
+        },
+        {
+          "name": "dc4e9bcf-1dc2-47bc-8042-0828d83d3b99.pdf",
+          "path": "https://drive.google.com/uc?id=15q79U8NbxR_tXC-Drn8MBpPwJ_MQurSH&export=download"
+        }
+      ]
+    },
+    {
+      "id": "Lectures-Maths-Sequence_and_Series_07.mp4",
+      "subject": "Lectures",
+      "chapter": "Maths",
+      "lecture": "Sequence and Series 07",
+      "path": "https://drive.google.com/uc?id=1WNfghoCgBHCY4mb9mu4D-c1KfD1AKN8S&export=download",
+      "duration": "00:00",
+      "thumbnail": "assets/default.png",
+      "relatedFiles": [
+        {
+          "name": "46cefc94-a004-4e89-af7c-50d044235dbe.pdf",
+          "path": "https://drive.google.com/uc?id=1DWRL6LoAaXbjjefH1b0MkmBpxBVgga-A&export=download"
+        },
+        {
+          "name": "295161b7-c9a2-42c9-9bf0-530f457b0040.pdf",
+          "path": "https://drive.google.com/uc?id=1yROQ4APNjWeopPPZeeyju6oMP8hhMTpD&export=download"
+        },
+        {
+          "name": "6a8bff59-ee10-4024-9aef-42d87cd2422f.pdf",
+          "path": "https://drive.google.com/uc?id=1Xh8sm3SRYeJCocR1okVROGz-yCTFGqmw&export=download"
+        },
+        {
+          "name": "d745da3b-fd22-4a20-b3f0-21935b487756.pdf",
+          "path": "https://drive.google.com/uc?id=1EuC3cXaCRkzBTy4oJxMcsnReCMHzCgSq&export=download"
+        },
+        {
+          "name": "676f2561-e127-4d25-9acc-4cc50e78e854.pdf",
+          "path": "https://drive.google.com/uc?id=1jhqJRr_Mo04uhTrvi0SzTNMOfHoj71Cp&export=download"
+        },
+        {
+          "name": "dc4e9bcf-1dc2-47bc-8042-0828d83d3b99.pdf",
+          "path": "https://drive.google.com/uc?id=15q79U8NbxR_tXC-Drn8MBpPwJ_MQurSH&export=download"
+        }
+      ]
+    },
+    {
+      "id": "Lectures-Organic_Chemistry-General_Organic_Chemistry_L-02_Temporary_Effect_Permanent_Effect.mp4",
+      "subject": "Lectures",
+      "chapter": "Organic Chemistry",
+      "lecture": "General Organic Chemistry L-02 Temporary Effect Permanent Effect",
+      "path": "https://drive.google.com/uc?id=1ivwovyYGlq2BmNOCOcd_qL5gupa63ZAj&export=download",
+      "duration": "00:00",
+      "thumbnail": "assets/default.png",
+      "relatedFiles": [
+        {
+          "name": "General Organic Chemistry _ L-02 (Class Notes) _ Temporary Effect Permanent Effect And Inductive Effect - JINDAL4FREE.pdf",
+          "path": "https://drive.google.com/uc?id=10cDOcgcd0icMN5WKLHB4rUeKqjvDmJDM&export=download"
+        },
+        {
+          "name": "General Organic Chemistry _ L-01 (Class Notes) _ Bond Breaking - JINDAL4FREE.pdf",
+          "path": "https://drive.google.com/uc?id=1DZL6Wjkc6pJrTQi81LaucdkjfEbS14Dq&export=download"
+        }
+      ]
     }
   ],
   "resources": []
