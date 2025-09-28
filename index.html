@@ -3,91 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Study Hub</title>
+    <title>PirateHive Z</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="navbar">
-        <div class="logo">MY HUB</div>
+        <div class="logo" onclick="showSubjects(); return false;" style="cursor: pointer;">PirateHive Z</div>
         <nav>
-            <a href="#" data-view="dashboard" onclick="showSubjects(); return false;">Home</a>
-            <a href="#" data-view="resources" onclick="showResources(); return false;">Resources</a>
-            <a href="#" data-view="todo" onclick="showTodo(); return false;">To-Do</a>
+            <a href="#" onclick="showSubjects(); return false;">Home</a>
+            <a href="#" onclick="showResources(); return false;">Resources</a>
         </nav>
     </header>
 
     <main id="app-content">
         <div id="dashboard-view" class="view">
-
-            <section id="daily-goals" class="daily-goals">
-                 <div class="section-header">
-                    <div class="section-title-with-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"></path></svg>
-                        <h2>Today's Schedule</h2>
-                    </div>
-                    <a href="#" class="view-all-link">View All</a>
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Welcome to PirateHive Z</h1>
+                    <p>Your centralized hub for focused learning and progress tracking.</p>
                 </div>
-                <div id="daily-goals-grid" class="lecture-grid"></div>
             </section>
-
-            <section id="subjects-section" class="all-lectures">
-                <div class="tab-nav">
-                    <a href="#" class="active">Subjects</a>
-                    <a href="#">Announcements</a>
+            
+            <div class="dashboard-content">
+                <div class="top-dashboard-grid">
+                    <section id="daily-goals" class="content-section">
+                        <h2>Today's Lectures</h2>
+                        <div id="daily-goals-grid" class="lecture-grid"></div>
+                    </section>
+                    <section class="content-section">
+                        <h2>To-Do List</h2>
+                        <div class="todo-container glass-card">
+                            <form id="todo-form">
+                                <input type="text" id="todo-input" placeholder="Add a quick task..." autocomplete="off">
+                                <button type="submit" title="Add Task"><i class="fas fa-plus"></i></button>
+                            </form>
+                            <ul id="todo-list"></ul>
+                        </div>
+                    </section>
                 </div>
-                <div id="subject-grid" class="goals-grid"></div>
-            </section>
 
+                <section id="subjects-section" class="content-section">
+                    <h2>All Subjects</h2>
+                    <div id="subject-grid" class="goals-grid"></div>
+                </section>
+            </div>
         </div>
 
-        <div id="lecture-view" class="view">
-             <section class="all-lectures">
-                 <div class="page-header"><h2 id="lecture-title"></h2><button class="back-button" onclick="showSubjects()">← Back to Subjects</button></div>
-                <div id="lecture-grid" class="lecture-grid"></div>
-            </section>
-        </div>
+        <div id="resources-view" class="view"></div>
+        <div id="chapter-view" class="view"></div>
+        <div id="lecture-view" class="view"></div>
         <div id="player-view" class="view"></div>
-        <div id="resources-view" class="view">
-             <section class="all-lectures">
-                 <div class="page-header"><h2>Resources</h2><button class="back-button" onclick="showSubjects()">← Back to Dashboard</button></div>
-                 <p style="text-align:center; color: var(--text-medium); margin-top: -2rem; margin-bottom: 3rem;">A collection of notes, past papers, and useful links.</p>
-                <div id="resources-grid" class="goals-grid"></div>
-            </section>
-        </div>
-        <div id="todo-view" class="view">
-            <section class="all-lectures">
-                 <div class="page-header"><h2>My To-Do List</h2><button class="back-button" onclick="showSubjects()">← Back to Dashboard</button></div>
-                 <div class="todo-container">
-                    <div class="todo-actions">
-                        <button id="add-lecture-todo-btn" class="cta-button">📌 Pin a Lecture</button>
-                        <form id="todo-form">
-                            <input type="text" id="todo-input" placeholder="Or add a custom task..." autocomplete="off">
-                            <button type="submit" class="cta-button secondary">Add</button>
-                        </form>
-                    </div>
-                    <ul id="todo-list-container"></ul>
-                 </div>
-            </section>
-        </div>
     </main>
 
-    <div id="end-of-day-modal" class="modal-overlay" style="display: none;">
-        <div class="modal-content glass-card">
-            <h3 id="modal-title">End of Day Check-in</h3><p id="modal-message"></p><button id="modal-close-btn" class="cta-button">Got it!</button>
-        </div>
-    </div>
-    <div id="pin-lecture-modal" class="modal-overlay" style="display: none;">
-        <div class="modal-content glass-card" style="max-width: 700px;">
-            <h3>Pin a Lecture to your To-Do List</h3>
-            <input type="text" id="pin-search-input" placeholder="Search for a lecture...">
-            <div id="pin-lecture-list" class="pin-lecture-list"></div>
-            <button id="pin-modal-close-btn" class="cta-button secondary" style="margin-top: 1rem;">Close</button>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+        <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+        <script src="script.js"></script>
 </body>
 </html>
+<script>
+// --- EXTRA UI IMPROVEMENTS ---
+
+// 1. Sticky Navbar shadow on scroll
+window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 10) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+// 2. Greeting message on Dashboard (Morning/Afternoon/Evening)
+function showGreeting() {
+    const hours = new Date().getHours();
+    let greeting = "Welcome back!";
+    if (hours < 12) greeting = "☀️ Good Morning!";
+    else if (hours < 18) greeting = "🌤️ Good Afternoon!";
+    else greeting = "🌙 Good Evening!";
+    
+    const hero = document.querySelector('.hero-content h1');
+    if (hero) hero.textContent = greeting + " PirateHive Z";
+}
+showGreeting();
+
+
+
+// 4. Keyboard Shortcuts Overlay (press "?")
+document.addEventListener('keydown', e => {
+    if (e.key === "?") {
+        alert(`
+🎮 Keyboard Shortcuts:
+▶ Space = Play/Pause
+⏩ Right Arrow = +10s
+⏪ Left Arrow = -10s
+⬆ Up = Volume Up
+⬇ Down = Volume Down
+N = Next Lecture
+P = Previous Lecture
+        `);
+    }
+});
+
+// 5. Progress Reset (for debugging / fresh start)
+function resetProgress() {
+    if (confirm("Reset all progress and todos?")) {
+        localStorage.clear();
+        location.reload();
+    }
+}
+</script>
