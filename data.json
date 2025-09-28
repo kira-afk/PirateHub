@@ -1,0 +1,55 @@
+{
+  "lectures": [
+    {
+      "id": "lec-1klOKYv9Q8SEaMEhJtknGvUXeTJ2YLbWP-1",
+      "subject": "Physics",
+      "chapter": "Lectures",
+      "lecture": "Physics",
+      "path": "https://drive.google.com/uc?id=1c7j4BpKiGdwxlem-40u6t7vuSceaVDY9&export=download",
+      "duration": "00:00",
+      "thumbnail": "assets/default.png",
+      "relatedFiles": []
+    },
+    {
+      "id": "lec-1klOKYv9Q8SEaMEhJtknGvUXeTJ2YLbWP-2",
+      "subject": "Physics",
+      "chapter": "Lectures",
+      "lecture": "Inorganic Chemistry",
+      "path": "https://drive.google.com/uc?id=1Wl-h5sc1LSh3bX7tQeD1He_3U_9XmREW&export=download",
+      "duration": "00:00",
+      "thumbnail": "assets/default.png",
+      "relatedFiles": []
+    },
+    {
+      "id": "lec-1klOKYv9Q8SEaMEhJtknGvUXeTJ2YLbWP-3",
+      "subject": "Physics",
+      "chapter": "Lectures",
+      "lecture": "Physical Chemistry",
+      "path": "https://drive.google.com/uc?id=17ajpgIxZkRz5Y7qFzmVsk8hkREekjBfd&export=download",
+      "duration": "00:00",
+      "thumbnail": "assets/default.png",
+      "relatedFiles": []
+    },
+    {
+      "id": "lec-1klOKYv9Q8SEaMEhJtknGvUXeTJ2YLbWP-4",
+      "subject": "Physics",
+      "chapter": "Lectures",
+      "lecture": "Maths",
+      "path": "https://drive.google.com/uc?id=1O-SMieUwGT2evuUjUgvCXzZBdHahq9eN&export=download",
+      "duration": "00:00",
+      "thumbnail": "assets/default.png",
+      "relatedFiles": []
+    },
+    {
+      "id": "lec-1klOKYv9Q8SEaMEhJtknGvUXeTJ2YLbWP-5",
+      "subject": "Physics",
+      "chapter": "Lectures",
+      "lecture": "Organic Chemistry",
+      "path": "https://drive.google.com/uc?id=1-9pizWQgpKYlG0qa7ooOh5YF-900FWB1&export=download",
+      "duration": "00:00",
+      "thumbnail": "assets/default.png",
+      "relatedFiles": []
+    }
+  ],
+  "resources": []
+}
