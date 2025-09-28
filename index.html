@@ -4,116 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PirateHive Z</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
-    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="navbar">
-        <div class="logo" onclick="showSubjects(); return false;" style="cursor: pointer;">PirateHive Z</div>
-        <nav>
-            <a href="#" onclick="showSubjects(); return false;">Home</a>
-            <a href="#" onclick="showResources(); return false;">Resources</a>
+        <div class="logo" data-action="show-dashboard">
+            <i class="fas fa-ship"></i> PirateHive Z
+        </div>
+        <nav class="main-nav">
+            <a href="#" data-action="show-dashboard"><i class="fas fa-th-large"></i> Dashboard</a>
+            <a href="#" data-action="show-resources"><i class="fas fa-book"></i> Resources</a>
+            <a href="#" data-action="show-history"><i class="fas fa-history"></i> History</a>
         </nav>
+        <div class="nav-actions">
+            <input type="search" id="site-search" placeholder="Search lectures..." autocomplete="off">
+        </div>
     </header>
 
     <main id="app-content">
-        <div id="dashboard-view" class="view">
-            <section class="hero">
-                <div class="hero-content">
-                    <h1>Welcome to PirateHive Z</h1>
+        <div id="site-search-results" class="glass-card"></div>
+
+        <div id="dashboard-view" class="view active">
+            <section class="hero glass-card">
+                <div id="greeting-text" class="hero-content">
+                    <h1>Welcome!</h1>
                     <p>Your centralized hub for focused learning and progress tracking.</p>
                 </div>
             </section>
             
             <div class="dashboard-content">
+                <div class="content-section">
+                    <h2><i class="fas fa-play-circle"></i> Continue Watching</h2>
+                    <div id="continue-watching-grid" class="lecture-grid"></div>
+                </div>
+                
                 <div class="top-dashboard-grid">
-                    <section id="daily-goals" class="content-section">
-                        <h2>Today's Lectures</h2>
+                    <section class="content-section">
+                        <h2><i class="fas fa-tv"></i> Today's Lectures</h2>
                         <div id="daily-goals-grid" class="lecture-grid"></div>
                     </section>
                     <section class="content-section">
-                        <h2>To-Do List</h2>
-                        <div class="todo-container glass-card">
-                            <form id="todo-form">
-                                <input type="text" id="todo-input" placeholder="Add a quick task..." autocomplete="off">
-                                <button type="submit" title="Add Task"><i class="fas fa-plus"></i></button>
-                            </form>
+                        <h2><i class="fas fa-thumbtack"></i> Pinned Items</h2>
+                        <div id="todo-container" class="glass-card">
                             <ul id="todo-list"></ul>
                         </div>
                     </section>
                 </div>
 
-                <section id="subjects-section" class="content-section">
-                    <h2>All Subjects</h2>
+                <section class="content-section">
+                    <h2><i class="fas fa-layer-group"></i> All Subjects</h2>
                     <div id="subject-grid" class="goals-grid"></div>
                 </section>
             </div>
         </div>
-
+        
         <div id="resources-view" class="view"></div>
         <div id="chapter-view" class="view"></div>
         <div id="lecture-view" class="view"></div>
         <div id="player-view" class="view"></div>
+        <div id="history-view" class="view"></div>
     </main>
 
-        <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
-        <script src="script.js"></script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-<script>
-// --- EXTRA UI IMPROVEMENTS ---
-
-// 1. Sticky Navbar shadow on scroll
-window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 10) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-});
-
-// 2. Greeting message on Dashboard (Morning/Afternoon/Evening)
-function showGreeting() {
-    const hours = new Date().getHours();
-    let greeting = "Welcome back!";
-    if (hours < 12) greeting = "☀️ Good Morning!";
-    else if (hours < 18) greeting = "🌤️ Good Afternoon!";
-    else greeting = "🌙 Good Evening!";
-    
-    const hero = document.querySelector('.hero-content h1');
-    if (hero) hero.textContent = greeting + " PirateHive Z";
-}
-showGreeting();
-
-
-
-// 4. Keyboard Shortcuts Overlay (press "?")
-document.addEventListener('keydown', e => {
-    if (e.key === "?") {
-        alert(`
-🎮 Keyboard Shortcuts:
-▶ Space = Play/Pause
-⏩ Right Arrow = +10s
-⏪ Left Arrow = -10s
-⬆ Up = Volume Up
-⬇ Down = Volume Down
-N = Next Lecture
-P = Previous Lecture
-        `);
-    }
-});
-
-// 5. Progress Reset (for debugging / fresh start)
-function resetProgress() {
-    if (confirm("Reset all progress and todos?")) {
-        localStorage.clear();
-        location.reload();
-    }
-}
-</script>
